@@ -4,6 +4,7 @@ A relational database system that unifies the academic curricula of three Turkis
 
 > Ege University — Faculty of Engineering, Computer Engineering Department  
 > Introduction to Databases | 2025–2026 Fall Semester  
+> Team: İrem Kurtulmaz, Efe Çiçekdağı, Gizem Redif, Mert Ali Berrak
 
 ---
 
@@ -143,12 +144,6 @@ For full details see [`models/logical/logical-model.md`](models/logical/logical-
 - **`MATCHES` table** — A dedicated M:N relation linking curriculum slots to equivalent courses at other universities, without modifying course definitions.
 - **`FACULTY_MEMBER` single-table specialization** — `INSTRUCTOR` and `ASSISTANT` are distinguished via a `MemberType` discriminator. The `COORDINATOR` role is a boolean flag enforced by a check constraint.
 - **T+A+L on `COURSE`** — Workload attributes were moved from subtype entities to `COURSE` during integration conforming, eliminating group-level redundancy.
-
----
-
-## Team
-
-İrem Kurtulmaz, Efe Çiçekdağı, Gizem Redif, Mert Ali Berrak
 
 ---
 
